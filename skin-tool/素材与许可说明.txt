@@ -1,0 +1,16 @@
+WorkBuddy 初音换肤工具 v1.8.2 - 素材与许可说明
+================================================
+
+1. 本工具是非官方、非商业的本地界面主题，不隶属于 WorkBuddy、Crypton Future Media 或初音未来官方。
+
+2. 初音未来角色相关二次创作请遵守ピアプロ・キャラクター・ライセンス及角色使用指南：
+   https://piapro.jp/license/character_guideline
+   https://piapro.jp/license/pcl/summary
+
+3. “任务执行中”八帧人物动画为本工具重新生成并透明化的素材。动作调研参考了轻微左右摆动的通用节奏；调研页面如下：
+   https://www.newgrounds.com/art/view/nim-ations/miku-vibing
+
+4. 上述 Newgrounds 页面原 GIF 标注为 CC BY-NC-ND 3.0。由于其不允许改作，本工具没有复制、修改或打包该 GIF；发布包只包含重新生成的八帧 PNG 素材。
+   https://creativecommons.org/licenses/by-nc-nd/3.0/
+
+5. 本版本仅建议用于朋友间非商业本地体验。不要售卖，不要用于商业宣传；公开发布前请自行重新核对角色、参考图、生成素材及使用场景的完整授权。

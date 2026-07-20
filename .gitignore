@@ -1,0 +1,22 @@
+# Local audit data and screenshots may contain task names.
+/skin-tool/audit/
+/skin-tool/tmp/
+/skin-tool/发布包/
+/skin-tool/workbuddy-miku-preview.png
+
+# Local runtime state and logs.
+*.log
+*.pid
+.env
+.env.*
+
+# Tool caches.
+__pycache__/
+*.py[cod]
+node_modules/
+.pytest_cache/
+
+# OS metadata.
+.DS_Store
+Thumbs.db
+Desktop.ini
