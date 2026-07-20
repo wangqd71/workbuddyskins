@@ -8,6 +8,14 @@
   <img src="skin-tool/assets/miku/task-running-chibi-centered-v6.webp" width="220" alt="Q 版角色慢速轻摆动画">
 </p>
 
+## 效果预览
+
+<p align="center">
+  <img src="docs/screenshots/miku-home-dark.png" width="100%" alt="WorkBuddy 初音未来全页面皮肤深色模式示例">
+</p>
+
+> 深色模式的新建任务页：独立舞台背景、初音主题主卡片和固定位置的 Q 版动画人物。截图时已隐藏任务列表，避免包含本地任务信息。
+
 ## 功能
 
 - 覆盖首页、侧栏、任务会话、项目、专家/技能/连接器、自动化、设置、菜单、弹窗与首次任务准备页。
