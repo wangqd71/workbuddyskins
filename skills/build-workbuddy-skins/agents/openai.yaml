@@ -1,0 +1,4 @@
+interface:
+  display_name: "WorkBuddy 皮肤开发"
+  short_description: "审计、制作、验证并发布 WorkBuddy 全页面主题皮肤"
+  default_prompt: "使用 $build-workbuddy-skins 为 WorkBuddy 制作并验证支持深浅色模式的全页面皮肤。"
