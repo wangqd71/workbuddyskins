@@ -44,7 +44,10 @@ foreach ($marker in @(
   'img[src*="BuddyCats"]',
   '.main-content--chat > .chat-container',
   '.main-content--welcome',
-  '[class*="_container_pf4c4_"]'
+  '[class*="_container_pf4c4_"]',
+  '.sidebar-next[data-view="artifacts"]',
+  '.sc-editor',
+  '.sc-block-simple_table_cell'
 )) {
   if (-not $css.Contains($marker)) { throw "Missing CSS marker: $marker" }
 }

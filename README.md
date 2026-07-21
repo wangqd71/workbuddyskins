@@ -2,7 +2,7 @@
 
 一个面向 Windows WorkBuddy 桌面客户端的非侵入式皮肤工具仓库，当前提供「MIKU MODE 01」全页面主题，以及用于继续开发 WorkBuddy 皮肤的 Codex Skill。
 
-> 当前版本：v1.8.2 · 已验证 WorkBuddy 5.2.5 · Windows 10/11 64 位
+> 当前版本：v1.8.3 · 已验证 WorkBuddy 5.2.5–5.2.6 · Windows 10/11 64 位
 
 <p align="center">
   <img src="skin-tool/assets/miku/task-running-chibi-centered-v6.webp" width="220" alt="Q 版角色慢速轻摆动画">
@@ -21,6 +21,7 @@
 - 覆盖首页、侧栏、任务会话、项目、专家/技能/连接器、自动化、设置、菜单、弹窗与首次任务准备页。
 - 支持 WorkBuddy 深色和浅色外观，并在页面跳转与重启后保留选择。
 - 新建任务页、聊天区和等待页使用不同背景素材。
+- 右侧 Markdown/Word 产物预览完整适配标签栏、标题、操作按钮、正文、引用、代码与表格，支持深浅色模式。
 - 任务执行期间显示慢速 Q 版角色动画；人物中心与地面基线逐帧锁定，不会在舞台上漂移。
 - 系统启用“减少动态效果”时自动切换为静态首帧。
 - 不修改 `WorkBuddy.exe` 或 `resources/app.asar`，可随时恢复原界面。
@@ -32,7 +33,7 @@
 
 - Windows 10 或 Windows 11 64 位
 - 已安装并至少正常启动过一次 WorkBuddy
-- 当前适配版本：WorkBuddy 5.2.5
+- 当前适配版本：WorkBuddy 5.2.5–5.2.6
 
 ### 安装皮肤
 
@@ -55,7 +56,7 @@ cd workbuddyskins\skin-tool
 ```text
 workbuddyskins/
 ├── README.md
-├── skin-tool/                     # 可运行的 v1.8.2 皮肤工具与源码
+├── skin-tool/                     # 可运行的 v1.8.3 皮肤工具与源码
 │   ├── assets/miku/               # 主题、背景和动画素材
 │   ├── scripts/                   # CDP 注入器、控制器和审计/动画脚本
 │   ├── tests/                     # PowerShell 与运行时回退测试
