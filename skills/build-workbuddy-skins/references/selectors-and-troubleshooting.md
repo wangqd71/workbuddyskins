@@ -16,10 +16,24 @@ WorkBuddy 5.2.5 中已验证的入口包括：
 - BuddyCats 图片：`img[src*="BuddyCats"]` 或 `img[src*="xiangsu-miao"]`；
 - 活动恢复按钮：`button[aria-label="恢复活动"]`；
 - 聊天背景：`.main-content--chat > .chat-container`；
+- 右侧产物预览：`.sidebar-next[data-view="artifacts"]`、`.detail-main__body`、`[class*="_mediaPreviewHeader_"]`、`.sc-editor`、`.sc-block-simple_table_cell`；
 - 首次准备页：`.workspace-preparing`、`.workspace-preparing__icon`；
 - 通用弹窗与设置：语义根类加 `[role="dialog"]`。
 
 版本升级后必须重新审计，不要认为这些选择器永久稳定。
+
+## 右侧产物预览断层
+
+症状：详情面板外框已经套用主题，但 Markdown/Word 预览仍显示原生纯黑或纯白背景，顶部标签、文件标题或表格颜色也与主界面脱节。
+
+处理：
+
+1. 以 `.sidebar-next[data-view="artifacts"]` 为作用域，避免影响概览、项目等其他详情页；
+2. 分层检查 `.detail-main__body`、`[class*="_mediaPreviewHeader_"]`、`.sc-editor` 和 `.sc-block-simple_table_cell` 的计算背景；
+3. 不只覆盖外层 `.detail-panel-container`，编辑器和表格通常包含自己的不透明背景；
+4. 为深色和浅色分别定义标签、标题、操作按钮、正文、引用、代码和表格颜色；
+5. 对正文容器保持 `filter: none`、`text-shadow: none`，避免长文和表格字体发虚；
+6. 在实际产物页截图，并确认 `.sc-editor` 的可见宽度大于零后再判定验证通过。
 
 ## 字体模糊
 

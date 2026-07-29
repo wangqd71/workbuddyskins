@@ -9,6 +9,10 @@
 
 ## 2. 启动与审计
 
+不要假设所有设备都安装在 `%LOCALAPPDATA%\Programs\WorkBuddy`。控制器应按以下顺序定位 `WorkBuddy.exe`：显式 `-WorkBuddyPath`、环境变量或上次状态、正在运行的进程、App Paths、卸载注册表的 `InstallLocation`/`DisplayIcon`、常见目录、开始菜单快捷方式。自动定位失败时，图形管理器必须允许用户手动选择 `WorkBuddy.exe` 并把已验证路径写入状态。
+
+版本号用于记录和提示，不应仅因不在固定白名单内就拒绝启动。对未验证版本先尝试注入，再以 DOM 标记、关键控件和资源变量校验结果判断兼容性；结构校验失败时明确提示需要适配。
+
 使用仅监听回环地址的调试参数启动 WorkBuddy：
 
 ```powershell
