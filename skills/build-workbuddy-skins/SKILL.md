@@ -18,6 +18,7 @@ Create WorkBuddy skins as external localhost CDP injectors. Preserve the install
 
 1. Establish a baseline.
    - Detect the WorkBuddy executable and version.
+   - Discover the executable across running processes, saved state, App Paths, uninstall `DisplayIcon`, common directories, and Start Menu shortcuts; provide a manual `WorkBuddy.exe` picker when discovery fails.
    - Capture the requested page in both appearances when applicable.
    - Inspect real DOM and computed styles; do not guess hashed class names.
 2. Keep the architecture non-invasive.
